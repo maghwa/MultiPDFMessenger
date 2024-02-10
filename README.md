@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MultiPDF Chat App
 
 > You can find the tutorial for this project on [YouTube](https://youtu.be/dXxQ0LR-3Hg).
@@ -12,6 +13,8 @@ The MultiPDF Chat App is a Python application that allows you to chat with multi
 
 ![MultiPDF Chat App Diagram](./docs/PDF-LangChain.jpg)
 =======
+=======
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 # "MultiPDF Messenger"🔖📄
 
 
@@ -22,6 +25,9 @@ The MultiPDF Chat App is a Python application that allows you to chat with multi
 ## ⭐️ How It Works
 ------------
 
+<<<<<<< HEAD
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
+=======
 >>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 
 The application follows these steps to provide responses to your questions:
@@ -37,7 +43,11 @@ The application follows these steps to provide responses to your questions:
 5. Response Generation: The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Dependencies and Installation
+=======
+##  ⭐️ Dependencies and Installation
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 =======
 ##  ⭐️ Dependencies and Installation
 >>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
@@ -57,7 +67,11 @@ OPENAI_API_KEY=your_secrit_api_key
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Usage
+=======
+## ⭐️ Usage
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 =======
 ## ⭐️ Usage
 >>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
@@ -78,6 +92,7 @@ To use the MultiPDF Chat App, follow these steps:
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Contributing
 ------------
 This repository is intended for educational purposes and does not accept further contributions. It serves as supporting material for a YouTube tutorial that demonstrates how to build this project. Feel free to utilize and enhance the app based on your own requirements.
@@ -85,5 +100,7 @@ This repository is intended for educational purposes and does not accept further
 ## License
 -------
 The MultiPDF Chat App is released under the [MIT License](https://opensource.org/licenses/MIT).
+=======
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 =======
 >>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
