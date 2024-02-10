@@ -89,7 +89,7 @@ def main():
                 # get pdf text
                 raw_text = get_pdf_text(pdf_docs)
 
-                # get the text chunks
+                # get the text chunks (diveded)
                 text_chunks = get_text_chunks(raw_text)
 
                 # create vector store
