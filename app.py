@@ -20,7 +20,7 @@ def get_pdf_text(pdf_docs):
                  text += page.extract_text()
          except PyPDF2.errors.PdfReadError as e:
           st.error(f"Error reading PDF '{pdf.name}': {e}")
-
+    return text
 
 
 def get_text_chunks(text):
