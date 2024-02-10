@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MultiPDF Chat App
 
 > You can find the tutorial for this project on [YouTube](https://youtu.be/dXxQ0LR-3Hg).
@@ -10,6 +11,18 @@ The MultiPDF Chat App is a Python application that allows you to chat with multi
 ------------
 
 ![MultiPDF Chat App Diagram](./docs/PDF-LangChain.jpg)
+=======
+# "MultiPDF Messenger"🔖📄
+
+
+## ⭐️ Introduction
+------------
+The MultiPDF Chat App is a Python application that allows you to chat with multiple PDF documents. You can ask questions about the PDFs using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded PDFs.
+
+## ⭐️ How It Works
+------------
+
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 
 The application follows these steps to provide responses to your questions:
 
@@ -23,7 +36,11 @@ The application follows these steps to provide responses to your questions:
 
 5. Response Generation: The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
 
+<<<<<<< HEAD
 ## Dependencies and Installation
+=======
+##  ⭐️ Dependencies and Installation
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 ----------------------------
 To install the MultiPDF Chat App, please follow these steps:
 
@@ -39,7 +56,11 @@ To install the MultiPDF Chat App, please follow these steps:
 OPENAI_API_KEY=your_secrit_api_key
 ```
 
+<<<<<<< HEAD
 ## Usage
+=======
+## ⭐️ Usage
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
 -----
 To use the MultiPDF Chat App, follow these steps:
 
@@ -56,6 +77,7 @@ To use the MultiPDF Chat App, follow these steps:
 
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
 
+<<<<<<< HEAD
 ## Contributing
 ------------
 This repository is intended for educational purposes and does not accept further contributions. It serves as supporting material for a YouTube tutorial that demonstrates how to build this project. Feel free to utilize and enhance the app based on your own requirements.
@@ -63,3 +85,5 @@ This repository is intended for educational purposes and does not accept further
 ## License
 -------
 The MultiPDF Chat App is released under the [MIT License](https://opensource.org/licenses/MIT).
+=======
+>>>>>>> 11385721d468d1df76c399e98674be6e68c53f99
