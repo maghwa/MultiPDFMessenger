@@ -83,7 +83,7 @@ def main():
     with st.sidebar:
         st.subheader("Your documents 📑 :")
         pdf_docs = st.file_uploader(
-            "Upload your PDFs here and click on 'Process'", accept_multiple_files=True)
+            "Choose your PDFs, upload them here, and press 'Process' to proceed", accept_multiple_files=True)
         if st.button("Process"):
             with st.spinner("Processing"):
                 # get pdf text
