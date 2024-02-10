@@ -1,11 +1,11 @@
-# MultiPDF Messenger
+# "MultiPDF Messenger"🔖📄
 
 
-## Introduction
+## ⭐️ Introduction
 ------------
 The MultiPDF Chat App is a Python application that allows you to chat with multiple PDF documents. You can ask questions about the PDFs using natural language, and the application will provide relevant responses based on the content of the documents. This app utilizes a language model to generate accurate answers to your queries. Please note that the app will only respond to questions related to the loaded PDFs.
 
-## How It Works
+## ⭐️ How It Works
 ------------
 
 
@@ -21,7 +21,7 @@ The application follows these steps to provide responses to your questions:
 
 5. Response Generation: The selected chunks are passed to the language model, which generates a response based on the relevant content of the PDFs.
 
-## Dependencies and Installation
+##  ⭐️ Dependencies and Installation
 ----------------------------
 To install the MultiPDF Chat App, please follow these steps:
 
@@ -37,7 +37,7 @@ To install the MultiPDF Chat App, please follow these steps:
 OPENAI_API_KEY=your_secrit_api_key
 ```
 
-## Usage
+## ⭐️ Usage
 -----
 To use the MultiPDF Chat App, follow these steps:
 
@@ -54,6 +54,3 @@ To use the MultiPDF Chat App, follow these steps:
 
 5. Ask questions in natural language about the loaded PDFs using the chat interface.
 
-## Contributing
-------------
-This repository is intended for educational purposes and does not accept further contributions. It serves as supporting material for a YouTube tutorial that demonstrates how to build this project. Feel free to utilize and enhance the app based on your own requirements.
