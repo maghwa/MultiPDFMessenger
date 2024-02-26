@@ -1,6 +1,15 @@
+# Import necessary libraries
+
+# Import PyPDF2 library to work with PDF files
 import PyPDF2
+
+# Import streamlit library to create a web app
 import streamlit as st
+
+# Import load_dotenv function from dotenv library to load environment variables from a .env file (optional)
 from dotenv import load_dotenv
+
+# Import specific classes from PyPDF2 and other libraries for functionalities 
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings, HuggingFaceInstructEmbeddings
@@ -11,15 +20,19 @@ from langchain.chains import ConversationalRetrievalChain
 from htmlTemplates import css, bot_template, user_template
 from langchain.llms import HuggingFaceHub
 
+# Function to extract text from uploaded PDFs
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
-         try:
-             pdf_reader = PdfReader(pdf)
-             for page in pdf_reader.pages:
-                 text += page.extract_text()
-         except PyPDF2.errors.PdfReadError as e:
-          st.error(f"Error reading PDF '{pdf.name}': {e}")
+        try:
+            # Create a PdfReader object to read the PDF
+            pdf_reader = PdfReader(pdf)
+            # Extract text from each page and concatenate them
+            for page in pdf_reader.pages:
+                text += page.extract_text()
+        except PyPDF2.errors.PdfReadError as e:
+            # Handle errors if the PDF cannot be read
+            st.error(f"Error reading PDF '{pdf.name}': {e}")
     return text
 
 
@@ -98,10 +111,12 @@ def main():
             with st.spinner("Processing"):
                 # get pdf text
                 raw_text = get_pdf_text(pdf_docs)
-                st.write(raw_text)
+                #st.write(raw_text)
+                
                 # get the text chunks (diveded)
                 text_chunks = get_text_chunks(raw_text)
-
+                #st.write(text_chunks)
+                
                 # create vector store
                 vectorstore = get_vectorstore(text_chunks)
 
@@ -119,3 +134,4 @@ if __name__ == '__main__':
    
    
     
+ 
