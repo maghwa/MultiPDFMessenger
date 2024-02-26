@@ -24,16 +24,11 @@ from langchain.llms import HuggingFaceHub
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
-        try:
-            # Create a PdfReader object to read the PDF
-            pdf_reader = PdfReader(pdf)
-            # Extract text from each page and concatenate them
-            for page in pdf_reader.pages:
-                text += page.extract_text()
-        except PyPDF2.errors.PdfReadError as e:
-            # Handle errors if the PDF cannot be read
-            st.error(f"Error reading PDF '{pdf.name}': {e}")
+        pdf_reader = PdfReader(pdf)
+        for page in pdf_reader.pages:
+            text += page.extract_text()
     return text
+
 
 
 # Function to split the extracted text into chunks
