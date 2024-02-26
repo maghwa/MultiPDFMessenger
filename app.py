@@ -36,27 +36,32 @@ def get_pdf_text(pdf_docs):
     return text
 
 
+# Function to split the extracted text into chunks
 def get_text_chunks(text):
     if text is None:
         return []
+    # Create a CharacterTextSplitter object to split the text based on newline characters with specified chunk size and overlap
     text_splitter = CharacterTextSplitter(
         separator="\n",
         chunk_size=1000,
         chunk_overlap=200,
         length_function=len
     )
+    # Split the text into chunks
     chunks = text_splitter.split_text(text)
     return chunks
 
 
 
 
+# Function to create a vector store from the text chunks
 def get_vectorstore(text_chunks):
-    # Replace 'your_openai_api_key' with your actual OpenAI API key
     embeddings = OpenAIEmbeddings(openai_api_key='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')
     
+    # Create a FAISS vectorstore using the embeddings
     vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     return vectorstore
+
 
 
 
